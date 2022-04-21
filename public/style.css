@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  max-width: 1000px;
+  width: 100%;
+  color: #000;
+  margin: 0 auto;
+}
+
+header,
+main {
+  margin: 0 5%;
+}
+
+header,
+footer {
+  margin-top: 10%;
+}
+
+h1.main-title {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 38px;
+}
+
+h2.main-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+p.main-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 80vw;
+}
+
+main {
+  padding: 10% 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "m1 m2"
+    "m3 m4"
+    "m5 m6";
+  justify-content: center;
+  column-gap: 10%;
+}
+
+div.team:nth-child(even) {
+  margin-top: 40%;
+}
+
+.team-member-image {
+  width: 100%;
+}
+
+.container-image {
+  display: flex;
+}
+
+.team-member-profile {
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.team-member-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+footer > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+}
+
+footer > p a {
+  color: #a9a9a9;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header > section.main-information {
+    width: 40%;
+  }
+
+  main {
+    padding: 10% 0 0 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "m1 m2 m3"
+      "m4 m5 m6";
+  }
+
+  div.team:nth-child(odd),
+  div.team:nth-child(even) {
+    margin: 0;
+  }
+
+  div.team:nth-child(2),
+  div.team:nth-child(5) {
+    margin-top: 40%;
+  }
+}
