@@ -37,13 +37,13 @@
 ## Overview
 
 <div style="display: flex; margin-bottom: 20px;">
-<img src="./assets/images/desktop.png" alt="screenshot desktop" width="300" style="margin-right: 20px"/>
-<img src="./assets/images/mobile.png" alt="screenshot mobile" height="350"/>
+<img src="./public/assets/images/desktop.png" alt="screenshot desktop" width="300" style="margin-right: 20px"/>
+<img src="./public/assets/images/mobile.png" alt="screenshot mobile" height="350"/>
 </div>
 
 This is the second challenge of the Responsive Web Designer path. It was a great experience because although it was a short project, I decided not to use any framework and to do it only with HTML and CSS.
 
-Also, in this project I could improve my knowledge in Flex and Grid Layout. 
+Also, in this project I could improve my knowledge in Flex and Grid Layout.
 
 ### Built With
 
